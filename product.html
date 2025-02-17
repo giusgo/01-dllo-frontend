@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">Shop</a> | 
+            <input type="text" placeholder="Search..." aria-label="Buscar productos"> 
+            <button aria-label="Buscar">🔍</button> 
+            <button aria-label="Carrito de compras">🛒</button>
+            <button aria-label="Cuenta de usuario">👤</button>
+        </nav>
+    </header> 
+    
+    <section>
+        <div style="display: flex;">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <img src="https://m.media-amazon.com/images/I/51WmhxCQypL._AC_US40_.jpg" alt="Vista 1 del producto">
+                <img src="https://m.media-amazon.com/images/I/51k3GQXSeGL._AC_US40_.jpg" alt="Vista 2 del producto">
+                <img src="https://m.media-amazon.com/images/I/410qDfLx3RL._AC_US40_.jpg" alt="Vista 3 del producto">
+                <img src="https://m.media-amazon.com/images/I/51pvA-9PASL._AC_US40_.jpg" alt="Vista 4 del producto">
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/I/712OyBPPL0L._AC_SL1500_.jpg" alt="Imagen principal del producto" style="width: 160px; height: 160px;">
+            </div>
+            <div>
+                <h2>Nombre del Producto</h2>
+                <div style="display: flex; align-items: center;">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <span style="margin: 0 10px;">|</span>
+                    <p>120 Reviews</p>
+                </div>
+                <p>Precio: $199.99</p>
+                <p>Descripción breve del producto.</p>
+                <div style="display: flex; align-items: center;">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section aria-labelledby="reviews-title">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 id="reviews-title">All Reviews (120)</h2>
+            <div>
+                <button aria-label="Configuración de reviews">⚙️</button>
+                <button aria-haspopup="listbox" aria-expanded="false">Latest ⬇️</button>
+                <button>Write a Review</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div style="border: 1px solid #ddd; padding: 10px; width: 45%; position: relative;">
+                <p>⭐⭐⭐⭐⭐</p>
+                <h4>Juan Pérez</h4>
+                <p>Excelente producto, cumple con todas mis expectativas.</p>
+                <p>Posted on August 18, 2023</p>
+                <button style="position: absolute; top: 10px; right: 10px;">⋮</button>
+            </div>
+            <div style="border: 1px solid #ddd; padding: 10px; width: 45%; position: relative;">
+                <p>⭐⭐⭐⭐</p>
+                <h4>María González</h4>
+                <p>Buen producto, pero el envío tardó más de lo esperado.</p>
+                <p>Posted on August 20, 2023</p>
+                <button style="position: absolute; top: 10px; right: 10px;">⋮</button>
+            </div>
+        </div>
+        <button style="margin-top: 20px;">Load More Reviews</button>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div style="display: flex; flex-direction: column; width: 45%;">
+              <form style="display: flex; flex-direction: column; gap: 10px;">
+                  <label for="name">Your name</label>
+                  <input type="text" id="name" required>
+                  
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" required>
+                  
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" required>
+                  
+                  <label for="message">Message</label>
+                  <textarea id="message" required></textarea>
+                  
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+          <div style="width: 45%;">
+              <p><strong>📞 Phone</strong></p>
+              <p>Mobile: +(84) 546-6789</p>
+              <p>Hotline: +(84) 456-6789</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509368!2d144.96305771531695!3d-37.81627974202185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df0f45555%3A0x5045675218cee20!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sau!4v1601912860023!5m2!1sen!2sau" 
+                  width="100%" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+              </iframe>
+          </div>
+      </div>
+    </section>
+  
+    <footer style="display: flex; justify-content: space-around;">
+        <div>
+            <h1>Name</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <p>About</p>
+            <p>Features</p>
+            <p>Works</p>
+            <p>Career</p>
+        </div>
+        <div>
+            <h4>Help</h4>
+            <p>Customer Support</p>
+            <p>Delivery Details</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div>
+            <h4>FAQ</h4>
+            <p>Account</p>
+            <p>Manage Deliveries</p>
+            <p>Orders</p>
+            <p>Payments</p>
+        </div>
+    </footer>
+</body>
+</html>
