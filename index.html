@@ -12,174 +12,226 @@
       content="tienda en línea, relojes inteligentes, tecnología, descuentos"
     />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="style.css">
     <title>Tienda X</title>
   </head>
   <body>
-    <header>
-      <h1>Logo</h1>
-      <nav>
-        <a href="#" aria-label="Ir a la página de inicio">Inicio</a> |
-        <a href="#" aria-label="Ir a la tienda">Tienda</a> |
-        <input
-          type="text"
-          placeholder="Search..."
-          aria-label="Buscar productos"
-        />
-        <button aria-label="Buscar">🔍</button>
-        <button aria-label="Ver carrito">🛒</button>
-        <button aria-label="Ver perfil">👤</button>
-      </nav>
-    </header>
+    <main class="main">
 
-    <section>
-      <h2>Mejor oferta en línea en relojes inteligentes</h2>
-      <h1>SMART WEARABLE.</h1>
-      <p>Hasta 80% de descuento</p>
-      <img src="smartwatch.jpg" alt="Reloj inteligente" />
-    </section>
+      <header class="header">
+        <div>
+          <h1>Logo</h1>
+        </div>
+        <nav>
+          <ul class="main-menu">
+            <li>
+              <a href="#" aria-label="Ir a la página de inicio">Inicio</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Ir a la tienda">Tienda</a>
+            </li>
+            <li>
+              <input
+              type="text"
+              placeholder="Search..."
+              aria-label="Buscar productos"
+            />
+            <button aria-label="Buscar">🔍</button>
+            </li>
+            <li>
+              <button aria-label="Ver carrito">🛒</button>
+            </li>
+            <li>
+              <button aria-label="Ver perfil">👤</button>
+            </li>
+            </ul>
+        </nav>
+      </header>
+  
+      <section class="misc">
+        <h2>Mejor oferta en línea en relojes inteligentes</h2>
+        <h1>SMART WEARABLE.</h1>
+        <p>Hasta 80% de descuento</p>
+        <img src="smartwatch.jpg" alt="Reloj inteligente" />
+      </section>
+  
+      <section class="categories">
+        <h3>Explorar por categoría</h3>
+        <ul>
+          <li><a href="#" aria-label="Ver teléfonos">Teléfonos</a></li>
+          <li><a href="#" aria-label="Ver computadoras">Computadoras</a></li>
+          <li>
+            <a href="#" aria-label="Ver relojes inteligentes"
+              >Relojes inteligentes</a
+            >
+          </li>
+          <li><a href="#" aria-label="Ver cámaras">Cámaras</a></li>
+          <li><a href="#" aria-label="Ver auriculares">Auriculares</a></li>
+          <li><a href="#" aria-label="Ver productos de gaming">Gaming</a></li>
+        </ul>
+      </section>
+  
+      <section class="products">
+        <h3>Sugerencias de hoy</h3>
+        <button aria-label="Recomendaciones para ti">Recomendado para ti</button>
+        <button aria-label="Los más vendidos">Top mejores vendidos</button>
+        <button aria-label="Los mejor valorados">Top valorados</button>
+        <button aria-label="70% de descuento">70% OFF</button>
+        <button aria-label="50% de descuento">50% OFF</button>
+        <button aria-label="30% de descuento">30% OFF</button>
+  
+        <div
+          style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px"
+        >
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/71v5bTE1TPL._AC_SX679_.jpg"
+              alt="Producto ABCD"
+            />
+            <p>Producto ABCD</p>
+            <p>Precio: $222 <s>$569</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/71wPgUyU7LL._AC_SL1295_.jpg"
+              alt="Producto BCDE"
+            />
+            <p>Producto BCDE</p>
+            <p>Precio: $580 <s>$1453</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/61RJg4xeyjL._AC_SL1488_.jpg"
+              alt="Producto CDEF"
+            />
+            <p>Producto CDEF</p>
+            <p>Precio: $123 <s>$241</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/71ylpYnO7zL._AC_SL1500_.jpg"
+              alt="Producto DEFG"
+            />
+            <p>Producto DEFG</p>
+            <p>Precio: $934</p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/517KiIm1mrL._AC_SL1500_.jpg"
+              alt="Producto EFGH"
+            />
+            <p>Producto EFGH</p>
+            <p>Precio: $456 <s>$908</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/61q9hmplGFL._AC_SL1500_.jpg"
+              alt="Producto FGHI"
+            />
+            <p>Producto FGHI</p>
+            <p>Precio: $960 <s>$1160</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/71zs0Ty85DL._AC_SL1500_.jpg"
+              alt="Producto GHIJ"
+            />
+            <p>Producto GHIJ</p>
+            <p>Precio: $145 <s>$198</s></p>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/71Uh4GPgf1L._AC_SL1500_.jpg"
+              alt="Producto HIJK"
+            />
+            <p>Producto HIJK</p>
+            <p>Precio: $534</p>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="footer">
+        <div>
+          <h1>Nombre</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
+            ante mollis quam tristique convallis.
+          </p>
+        </div>
+  
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li>
+              <p>
+                <a href="#" aria-label="Más información sobre la compañía"
+                  >Acerca de</a
+                >
+              </p>
+            </li>
+            <li>
+              <p><a href="#" aria-label="Ver características">Características</a></p>
+            </li>
+            <li>
+              <p><a href="#" aria-label="Ver cómo funciona">Funciona</a></p>
+            </li>
+            <li>
+              <p><a href="#" aria-label="Ver oportunidades laborales">Carrera</a></p>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li>
+              <p>
+                <a href="#" aria-label="Soporte al cliente">Soporte al Cliente</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#" aria-label="Detalles de entrega">Detalles de Entrega</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#" aria-label="Ver términos y condiciones"
+                  >Términos y Condiciones</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#" aria-label="Ver política de privacidad"
+                  >Política de Privacidad</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <h4>Preguntas Frecuentes</h4>
+          <ul>
+            <li>
+              <p><a href="#" aria-label="Ver información de la cuenta">Cuenta</a></p>
+            </li>
+            <li>
+              <p>
+                <a href="#" aria-label="Gestionar entregas">Gestionar Entregas</a>
+              </p>
+            </li>
+            <li>
+              <p><a href="#" aria-label="Ver pedidos">Pedidos</a></p>
+            </li>
+            <li>
+              <p><a href="#" aria-label="Ver opciones de pago">Pagos</a></p>
+            </li>
+          </ul>
+        </div>
+      </footer>
 
-    <section>
-      <h3>Explorar por categoría</h3>
-      <ul>
-        <li><a href="#" aria-label="Ver teléfonos">Teléfonos</a></li>
-        <li><a href="#" aria-label="Ver computadoras">Computadoras</a></li>
-        <li>
-          <a href="#" aria-label="Ver relojes inteligentes"
-            >Relojes inteligentes</a
-          >
-        </li>
-        <li><a href="#" aria-label="Ver cámaras">Cámaras</a></li>
-        <li><a href="#" aria-label="Ver auriculares">Auriculares</a></li>
-        <li><a href="#" aria-label="Ver productos de gaming">Gaming</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Sugerencias de hoy</h3>
-      <button aria-label="Recomendaciones para ti">Recomendado para ti</button>
-      <button aria-label="Los más vendidos">Top mejores vendidos</button>
-      <button aria-label="Los mejor valorados">Top valorados</button>
-      <button aria-label="70% de descuento">70% OFF</button>
-      <button aria-label="50% de descuento">50% OFF</button>
-      <button aria-label="30% de descuento">30% OFF</button>
-
-      <div
-        style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px"
-      >
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/71v5bTE1TPL._AC_SX679_.jpg"
-            alt="Producto ABCD"
-          />
-          <p>Producto ABCD</p>
-          <p>Precio: $222 <s>$569</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/71wPgUyU7LL._AC_SL1295_.jpg"
-            alt="Producto BCDE"
-          />
-          <p>Producto BCDE</p>
-          <p>Precio: $580 <s>$1453</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/61RJg4xeyjL._AC_SL1488_.jpg"
-            alt="Producto CDEF"
-          />
-          <p>Producto CDEF</p>
-          <p>Precio: $123 <s>$241</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/71ylpYnO7zL._AC_SL1500_.jpg"
-            alt="Producto DEFG"
-          />
-          <p>Producto DEFG</p>
-          <p>Precio: $934</p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/517KiIm1mrL._AC_SL1500_.jpg"
-            alt="Producto EFGH"
-          />
-          <p>Producto EFGH</p>
-          <p>Precio: $456 <s>$908</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/61q9hmplGFL._AC_SL1500_.jpg"
-            alt="Producto FGHI"
-          />
-          <p>Producto FGHI</p>
-          <p>Precio: $960 <s>$1160</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/71zs0Ty85DL._AC_SL1500_.jpg"
-            alt="Producto GHIJ"
-          />
-          <p>Producto GHIJ</p>
-          <p>Precio: $145 <s>$198</s></p>
-        </div>
-        <div>
-          <img
-            src="https://m.media-amazon.com/images/I/71Uh4GPgf1L._AC_SL1500_.jpg"
-            alt="Producto HIJK"
-          />
-          <p>Producto HIJK</p>
-          <p>Precio: $534</p>
-        </div>
-      </div>
-    </section>
-
-    <footer style="display: flex; justify-content: space-around">
-      <div>
-        <h1>Nombre</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-          ante mollis quam tristique convallis.
-        </p>
-      </div>
-      <div>
-        <h4>Compañía</h4>
-        <p>
-          <a href="#" aria-label="Más información sobre la compañía"
-            >Acerca de</a
-          >
-        </p>
-        <p><a href="#" aria-label="Ver características">Características</a></p>
-        <p><a href="#" aria-label="Ver cómo funciona">Funciona</a></p>
-        <p><a href="#" aria-label="Ver oportunidades laborales">Carrera</a></p>
-      </div>
-      <div>
-        <h4>Ayuda</h4>
-        <p>
-          <a href="#" aria-label="Soporte al cliente">Soporte al Cliente</a>
-        </p>
-        <p>
-          <a href="#" aria-label="Detalles de entrega">Detalles de Entrega</a>
-        </p>
-        <p>
-          <a href="#" aria-label="Ver términos y condiciones"
-            >Términos y Condiciones</a
-          >
-        </p>
-        <p>
-          <a href="#" aria-label="Ver política de privacidad"
-            >Política de Privacidad</a
-          >
-        </p>
-      </div>
-      <div>
-        <h4>Preguntas Frecuentes</h4>
-        <p><a href="#" aria-label="Ver información de la cuenta">Cuenta</a></p>
-        <p>
-          <a href="#" aria-label="Gestionar entregas">Gestionar Entregas</a>
-        </p>
-        <p><a href="#" aria-label="Ver pedidos">Pedidos</a></p>
-        <p><a href="#" aria-label="Ver opciones de pago">Pagos</a></p>
-      </div>
-    </footer>
+    </main> 
   </body>
 </html>
